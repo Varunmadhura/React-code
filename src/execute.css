@@ -1,0 +1,84 @@
+/* Styles for the entire container */
+.connect-server-container {
+  width: 89%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Flex container for form and output side-by-side */
+.form-output-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Form section styling */
+.form-section {
+  flex: 1;
+}
+
+/* Output section styling */
+.output-section {
+  flex: 1;
+  max-width: 45%;
+}
+
+/* Styling form inputs */
+.connect-server-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+.connect-server-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.connect-server-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the output and error messages */
+.connect-server-output, .connect-server-error {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+/* Make the output scrollable */
+.connect-server-output {
+  background-color: #d4edda;
+  color: #155724;
+  max-height: 450px; /* Set a max height */
+  overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+/* Make the error scrollable */
+.connect-server-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  max-height: 300px; /* Set a max height */
+  overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+/* Add spacing between the form and output section */
+.output-section {
+  display: block;
+}
