@@ -3,6 +3,8 @@ import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate, Link } from "react-router-dom";
+import "D:/react-linux-app/django-react-app/src/form.css";
+
 
 
 export function Login(){
@@ -18,7 +20,17 @@ export function Login(){
             );
             console.log("Response:", response);
             if (response.status === 200){
-                alert("Login Successfull");
+
+                const otp = response.data.otp;
+
+                
+
+                sessionStorage.setItem("otp", otp);
+
+                console.log("stored otp:", otp)
+
+                alert("Login Successfull.");
+                sessionStorage.setItem("email", values.email)
                 navigate('/verifyotp');
             }
         }catch(error){
@@ -42,9 +54,9 @@ export function Login(){
 
 
     return(
-        <div className="container-fluid">
+        <div className="form-container">
           
-            <form className="w-25 p-2" onSubmit={formik.handleSubmit}>
+            <form onSubmit={formik.handleSubmit}>
                 <h2 className="bi bi-person-fill">Login</h2>
                 <div>
                     <label className="form-label" htmlFor="email">Email</label>

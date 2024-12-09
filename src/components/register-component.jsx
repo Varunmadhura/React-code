@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import "D:/react-linux-app/django-react-app/src/register.css";
 
 export function Register(){
 
@@ -51,8 +52,8 @@ export function Register(){
 
 
   return(
-    <div className="container-fluid">
-      <form className="w-25 p-2" onSubmit={formik.handleSubmit}>
+    <div className="form-container">
+      <form onSubmit={formik.handleSubmit}>
           <h2 className="bi bi-person-circle">Registration</h2>
           <div>
             <label htmlFor="username">Username</label>
