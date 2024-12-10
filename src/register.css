@@ -1,4 +1,4 @@
-/* Container for forms */
+
 .form-container {
     width: 400px;
     margin: 50px auto;
@@ -21,7 +21,6 @@
     }
 }
 
-/* Input Fields */
 .form-container input[type="text"],
 .form-container input[type="password"],
 .form-container input[type="email"],
@@ -36,14 +35,13 @@
     transition: all 0.3s ease;
 }
 
-/* Input focus effect */
+
 .form-container input:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
-/* Buttons */
 .form-container button {
     width: 100%;
     padding: 12px;
@@ -61,14 +59,14 @@
     background-color: #218838;
 }
 
-/* Error messages */
+
 .form-container .error-message {
     color: red;
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-/* Scrollable output */
+
 .scrollable-output {
     max-height: 300px;
     overflow-y: auto;
@@ -78,7 +76,6 @@
     border-radius: 5px;
 }
 
-/* Smooth scrollbars */
 .scrollable-output::-webkit-scrollbar {
     width: 8px;
 }
@@ -88,7 +85,7 @@
     border-radius: 5px;
 }
 
-/* Button animations */
+
 @keyframes buttonPulse {
     0% {
         transform: scale(1);
@@ -105,7 +102,7 @@ button:hover {
     animation: buttonPulse 0.6s infinite;
 }
 
-/* Responsive layout for mobile */
+
 @media screen and (max-width: 600px) {
     .form-container {
         width: 100%;
